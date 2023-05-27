@@ -1,0 +1,3 @@
+postgresUrl: "postgres://admin:admin@postgres:5432/gigachat"
+jwtSecret: "gigachat"
+port: 3002

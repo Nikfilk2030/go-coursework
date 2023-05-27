@@ -1,0 +1,43 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.brand {
+    font-size: 48px;  /* Change the size as per your need */
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    /*top: 25%;*/
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #003f7f;
+}

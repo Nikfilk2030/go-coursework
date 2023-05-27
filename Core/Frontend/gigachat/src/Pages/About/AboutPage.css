@@ -1,0 +1,21 @@
+.about-container {
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 500px;
+    max-width: 90%;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.about-container h1, .about-container p {
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    line-height: 1.6;
+}
