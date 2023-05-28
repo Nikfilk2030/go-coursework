@@ -1,6 +1,10 @@
 # Gigachat
 
-Welcome to Gigachat! This is a simple chat application built with React, Node.js, and MongoDB.
+Welcome to Gigachat! This is a simple chat application built with React, PostgreSQL, Go.
+
+## Coursework
+
+This work was part of Nikita Sheverdov's coursework, so I advise you to study the [course report](https://www.overleaf.com/read/pncrvxygzjfp)
 
 ## Project Structure
 
@@ -18,26 +22,18 @@ configuration, and scripts for automating deployment.
 
 The `Core` directory contains the core code and modules for the Gigachat application. It includes the frontend, backend, and other supporting modules.
 
-- **Components**: Contains reusable components used across different pages.
-- **Pages**: Contains the main pages of the application.
-- **API**: Contains server-side code and API endpoints.
-- **Database**: Contains code and scripts for database operations.
+- **Auth**: Microservice written in Go, responsible for user authentication.
+- **Chat**:  Microservice written in Go, responsible for chat logic.
+- **Frontend**:  Microservice written in React, responsible for frontend.
+- **PostgreSQL**: Contains code and scripts for database operations.
 
 ## Getting Started
 
 To get started with the Gigachat project, follow the instructions below:
 
 1. Clone the repository: `git clone https://github.com/your-username/gigachat.git`
-2. Navigate to the project root directory: `cd gigachat`
-3. Install dependencies:
-   - For the frontend, navigate to the `Core/frontend` directory and run `npm install`.
-   - For the backend, navigate to the `Core/backend` directory and run `npm install`.
-4. Configure the application:
-   - Update any necessary configuration files, such as database connection settings or environment variables.
-5. Start the application:
-   - For the frontend, navigate to the `Core/frontend` directory and run `npm start`.
-   - For the backend, navigate to the `Core/backend` directory and run `npm start`.
-6. Access the application by opening your web browser and visiting `http://localhost:3000`.
+2. Expand each of the directories in Core in any convenient container registry
+3. Modify the kubernetes charts and manifests in the DevOps helm directory (Helm and K8s-manifests directories) so that you can deploy your project in kubernetes
 
 ## Contributing
 
